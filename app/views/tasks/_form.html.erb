@@ -1,0 +1,12 @@
+<%= f.label :name %>
+<%= f.text_field :name, requried: true %>
+<br>Duration:<br>
+<%= f.label :day, 'Days' %>
+<%= f.number_field :day, min: 0 %>
+<br>
+<%= f.label :hour, 'Hours' %>
+<%= f.number_field :hour, min: 0 %>
+<br>
+<%= f.label :minute, 'Minutes' %>
+<%= f.number_field :minute, min: 0 %>
+<%= f.submit %>

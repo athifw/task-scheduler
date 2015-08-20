@@ -1,1 +1,8 @@
 <%= @room.name %>
+<%= link_to 'New Task', new_room_task_path(room_id: @room.id) %>
+
+<% if @room.tasks %>
+  <% @room.tasks.each do |task| %>
+    <br><%= render 'tasks/task', task: task %>
+  <% end %>
+<% end %>
