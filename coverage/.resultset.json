@@ -575,6 +575,10 @@
         null,
         null,
         1,
+        null,
+        1,
+        19,
+        null,
         null
       ],
       "/Users/athifwulandana-mac/Documents/repos/task_scheduler/spec/features/new_rooms_spec.rb": [
@@ -687,6 +691,18 @@
         null,
         null,
         1,
+        null,
+        1,
+        23,
+        null,
+        1,
+        null,
+        1,
+        23,
+        0,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/athifwulandana-mac/Documents/repos/task_scheduler/app/controllers/home_controller.rb": [
@@ -699,6 +715,9 @@
       ],
       "/Users/athifwulandana-mac/Documents/repos/task_scheduler/app/controllers/rooms_controller.rb": [
         1,
+        1,
+        1,
+        null,
         1,
         null,
         null,
@@ -723,13 +742,19 @@
         1,
         2,
         null,
+        null,
+        1,
+        9,
+        0,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/athifwulandana-mac/Documents/repos/task_scheduler/app/controllers/tasks_controller.rb": [
         1,
         1,
-        0,
-        null,
+        1,
         null,
         1,
         2,
@@ -768,13 +793,20 @@
         null,
         null,
         1,
-        14,
+        24,
         null,
         1,
+        null,
+        1,
+        10,
+        0,
+        0,
+        null,
+        null,
         null,
         null
       ]
     },
-    "timestamp": 1440183950
+    "timestamp": 1440185440
   }
 }

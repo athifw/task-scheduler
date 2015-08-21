@@ -5,4 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :rooms
+
+  def has_room?(room)
+    room.user_id == self.id
+  end
 end

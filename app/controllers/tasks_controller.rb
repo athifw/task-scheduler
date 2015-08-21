@@ -1,7 +1,6 @@
 class TasksController < ApplicationController
-  def index
-    @tasks = room.tasks
-  end
+  before_action :require_login
+  before_action :check_user_has_room, only: [:new, :create, :edit, :update, :destroy]
 
   def new
     @task = room.tasks.build
@@ -43,5 +42,12 @@ class TasksController < ApplicationController
     @room ||= Room.find(params[:room_id])
   end
   helper_method :room
+
+  def check_user_has_room
+    unless current_user.has_room?(room)
+      flash[:error] = "You do not have this room"
+      redirect_to root_path
+    end
+  end
 
 end
