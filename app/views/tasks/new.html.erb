@@ -1,3 +1,9 @@
 <%= form_for [room, @task] do |f| %>
   <%= render 'tasks/form', f: f %>
 <% end %>
+
+<% if @task.errors.any? %>
+  <% @task.errors.full_messages.each do |error| %>
+    <%= error %><br>
+  <% end %>
+<% end %>
