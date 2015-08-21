@@ -1,0 +1,8 @@
+<% if user_signed_in? %>
+  <br><%= link_to("New Room", new_room_path) %>
+  <% if current_user.rooms.any? %>
+    <% current_user.rooms.each do |room| %>
+      <br><%= link_to(room.name, room_path(room)) %>
+    <% end %>
+  <% end %>
+<% end %>

@@ -1,0 +1,5 @@
+<div id="<%= dom_id(task) %>">
+  <%= task.name %><br>
+  every <%= task.day %> days, <%= task.hour %> hours, and <%= task.minute %> minutes.<br>
+  <%= link_to 'Edit Task', edit_room_task_path(room_id: task.room.id, id: task.id) %>
+</div>
